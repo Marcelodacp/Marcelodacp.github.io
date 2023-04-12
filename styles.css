@@ -394,8 +394,8 @@ h1{
 }
 .gallery-items{
     
-    width: 512px;
-    height: 512px;
+    width: 312px;
+    height: 312px;
     border: 5px solid #FFF;
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
@@ -406,9 +406,9 @@ h1{
     height: 100%;
     object-fit: cover;
 }
-.gallery-items:hover{
+/*.gallery-items:hover{
     transform: scale(1.1);
-}
+}*/
 
 
 @media screen and (max-width:1000px){
