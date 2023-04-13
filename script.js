@@ -16,6 +16,8 @@ function proximaImg(){
 
     document.getElementById('radio'+cont).checked = true
 }
+
+
 document.querySelector(".hamburger").addEventListener("click", () =>
     document.querySelector(".menu-hamburguer").classList.toggle("show-menu")
 );
@@ -30,3 +32,26 @@ loginBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
 	loginPopup.style.display = "none";
 });
+
+
+
+let posicaoInicial = 0;
+const slidesPorVez = 3;
+const slides = document.querySelectorAll('.radio');
+const totalSlides = slides.length;
+
+function mudarSlide(direcao) {
+  posicaoInicial += direcao * slidesPorVez;
+
+  if (posicaoInicial < 0) {
+    posicaoInicial = totalSlides - slidesPorVez;
+  }
+
+  if (posicaoInicial >= totalSlides) {
+    posicaoInicial = 0;
+  }
+
+  for (let i = 0; i < totalSlides; i++) {
+    slides[i].style.transform = `translateX(-${posicaoInicial * (100 / slidesPorVez)}%)`;
+  }
+}

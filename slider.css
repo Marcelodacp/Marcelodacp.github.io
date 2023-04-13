@@ -1,15 +1,18 @@
 section.slider{
 
-    height: 650px;
-    width: 1024px;
+
+    width: 65%;
     border-radius: 0;
+    display: inline;
     overflow: hidden;
+    text-align: center;
     justify-content: center;
     position: absolute;
-    top: 55%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 .slider-content{
     width: 400%;
